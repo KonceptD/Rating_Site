@@ -1,0 +1,61 @@
+﻿@page
+@model RatingSite.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+<form method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Input.Email"></label>
+        <input asp-for="Input.Email" class="form-control" />
+        <span asp-validation-for="Input.Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.Password"></label>
+        <input asp-for="Input.Password" type="password" class="form-control" />
+        <span asp-validation-for="Input.Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.Username"></label>
+        <input asp-for="Input.Username" class="form-control" />
+        <span asp-validation-for="Input.Username" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.FirstName"></label>
+        <input asp-for="Input.FirstName" class="form-control" />
+        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.LastName"></label>
+        <input asp-for="Input.LastName" class="form-control" />
+        <span asp-validation-for="Input.LastName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.SecretQuestion"></label>
+        <input asp-for="Input.SecretQuestion" class="form-control" />
+        <span asp-validation-for="Input.SecretQuestion" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.SecretAnswer"></label>
+        <input asp-for="Input.SecretAnswer" class="form-control" />
+        <span asp-validation-for="Input.SecretAnswer" class="text-danger"></span>
+    </div>
+
+    <!-- Add other registration fields here, e.g., FirstName, LastName, etc. -->
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+<div>
+    <a asp-page="Login">Already have an account? Login here.</a>
+</div>

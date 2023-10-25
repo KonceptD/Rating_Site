@@ -8,7 +8,14 @@
     }
   },
   "profiles": {
-    "http": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "RatingSite": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "http://localhost:5230",
@@ -17,7 +24,7 @@
       },
       "dotnetRunMessages": true
     },
-    "https": {
+    "RatingSite HTTPS": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:7038;http://localhost:5230",
@@ -25,13 +32,6 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true
-    },
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
     }
   }
 }
